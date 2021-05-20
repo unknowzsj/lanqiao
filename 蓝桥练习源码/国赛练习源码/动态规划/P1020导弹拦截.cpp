@@ -17,7 +17,7 @@ int main(){
 		dp2[i]=1;//初始化
 		for(int j=1;j<i;++j){
 			if(num[j]>=num[i]){//最长不升序，可以等于 
-				dp1[i]=max(dp1[i],dp1[j]+1);
+				dp1[i]=max(dp1[i],dp1[j]+1);//只要满足条件，便表示num[i]可以作为末尾 
 			}else if(num[j]<num[i]){//最长上升序列 
 				dp2[i]=max(dp2[i],dp2[j]+1);
 			}
