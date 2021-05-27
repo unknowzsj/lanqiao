@@ -5,8 +5,6 @@ string allstr;
 string word[10010];
 int allw;
 
-
-
 int main(){
 	//¶ÁÈ¡ÊäÈë 
 	cin>>p>>k;
